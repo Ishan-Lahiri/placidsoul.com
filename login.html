@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://fontawesome.com/" crossorigin="anonymous"></script>
+    <title>Login to placid soul</title>
+    <style>
+       
+       *{
+         margin: 8px;
+         padding: 0;
+    }
+
+    .navbar{
+            margin: -47px -8px;
+            font-family: 'Ubuntu','Courier New', Courier, monospace;
+        }
+
+        .navbar ul{
+            overflow: auto;/*overflow is used to bring bg color which is lost in list style */
+        }
+
+        .navbar li{
+            float: right;
+            list-style: none;
+            padding: 3px;
+            margin: 12px 27px;
+        }
+       
+        .navbar li a:hover{
+            color: crimson;
+        }
+
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;/*text decoration is used to override the underlined in navigation*/
+            color: blanchedalmond;
+            cursor:pointer;
+            box-shadow: -8px 39px rgb(110, 10, 211);
+        }
+
+        .navbar input{
+            border: 2px solid black;
+            padding: 3px 4px;
+            width: 150px;
+        }
+
+        .navbar img{
+            float: left;
+            width: 87px;
+            margin: 32px 0px;
+            position: fixed;
+            left: 2px;
+            cursor: all-scroll;
+        }
+
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: rgb(17, 5, 185);
+        }
+
+    body{
+    background: url('https://as1.ftcdn.net/v2/jpg/02/70/42/42/1000_F_270424227_PTo0qIlJoU08f8kF0rpxZcpULSSP9qvO.jpg') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+.container{ 
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 40%; 
+}
+
+.container input{
+    color: azure;
+}
+
+.container h1{
+    font-family: 'Heebo', sans-serif;
+    width: 50%;
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 5px solid wheat;
+    margin-bottom: 15px;
+    padding: 13px 0;
+}
+
+.box{
+    width: 100%; 
+    margin: 22px 0px;
+    border-bottom: 2px solid white;
+}
+
+.box input{  
+    background: none;
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    color: whitesmoke;
+}
+
+.btn{
+    color: whitesmoke;
+    cursor: pointer;
+    outline: none; 
+    margin: 12px 0;
+    padding: 10px 21px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+    
+}
+
+.box i{ 
+    width: 25px; 
+    text-align: center;
+}
+
+.btn:hover{
+    opacity: 0.5;
+    color: rgb(192, 23, 11); 
+    background: whitesmoke; 
+    
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+                <img src="toplogo.png" alt="image cannot be loaded">
+            <ul>
+                <li><a href = "Contact_Us.html"><h3>contact us</h3></a></li>
+                <li><a href = "team.html"><h3>Team</h3></a></li>
+                <li><a class="active" href = "#"><h3>Services</h3></a></li>
+                <li><a href = "index.html"><h3>Home</h3></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Log In</h1>
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Enter Your Username">
+        </div>
+
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        </div>
+        <button class="btn"><a href = "Services.html"><h3>Sign In</h3></a></button>
+    </div>
+</body>
+</html>
